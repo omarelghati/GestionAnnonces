@@ -1,0 +1,43 @@
+		table{
+				border: solid 1px #DDDDDD;
+				width: 65%;
+			}
+			
+			.bd{
+				border:solid 1px #DDDDDD;
+			}
+			.mini{
+				display:inline-block;
+			}
+			td{
+				padding: 6px;
+				border:solid 1px #DDDDDD;
+			}
+			.categ{
+				color: #369;
+				cursor: pointer;
+				font-weight: bold;
+				font: 18px 'Consolas';
+				width: 330px;
+			}
+			.prix{
+				color: #093;
+				font-weight: bold;
+				width: 100px;
+				font: 20px Constantia;
+			}
+			.spec{
+				color: #AAA;
+				font: 14px 'Palatino Linotype';
+			}
+			.time{
+				font: 14px Constantia;
+				text-align: center;
+				width: 100px;
+			}
+			img{
+				width: 14Opx; height: 92px;
+				margin-left: 213px;
+				margin-top: 23px;
+				
+			}

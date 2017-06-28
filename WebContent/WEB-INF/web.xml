@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+   
+         http://www.apache.org/licenses/LICENSE-2.0
+   
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+  <!DOCTYPE web-app PUBLIC
+	"-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+	"http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  <display-name>Struts Blank Application</display-name>
+  
+  <!-- Standard Action Servlet Configuration -->
+  <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/struts-config.xml</param-value>
+    </init-param>
+    <load-on-startup>2</load-on-startup>
+ </servlet>
+   <servlet>
+ 	<servlet-name>tout_offres</servlet-name>
+    <servlet-class>controler.ToutAnnonces_serv</servlet-class>
+ </servlet>
+ <servlet>
+ 	<servlet-name>consultion</servlet-name>
+    <servlet-class>controler.Consultation</servlet-class>
+ </servlet>
+
+ <servlet>
+ 	<servlet-name>modifierAnnonce</servlet-name>
+    <servlet-class>controler.Modifier_annonce</servlet-class>
+ </servlet>
+ <servlet>
+ 	<servlet-name>supprimerAnnonce</servlet-name>
+    <servlet-class>controler.Supprime_Annonce</servlet-class>
+ </servlet>
+ <servlet>
+ 	<servlet-name>Suppri_membre</servlet-name>
+ 	<display-name>Suppri_membre</display-name>
+ 	<description></description>
+ 	<servlet-class>controler.Suppri_membre</servlet-class>
+ </servlet>
+ <servlet>
+ 	<servlet-name>Supprimer_membre</servlet-name>
+ 	<display-name>Supprimer_membre</display-name>
+ 	<description></description>
+ 	<servlet-class>controler.Supprimer_membre</servlet-class>
+ </servlet>
+
+
+  <!-- Standard Action Servlet Mapping -->
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>tout_offres</servlet-name>
+    <url-pattern>/toffres</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>consultion</servlet-name>
+    <url-pattern>/consult</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+  	<servlet-name>modifierAnnonce</servlet-name>
+  	<url-pattern>/ModAnnonce</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>supprimerAnnonce</servlet-name>
+  	<url-pattern>/supprim</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Suppri_membre</servlet-name>
+  	<url-pattern>/Suppri_membre</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Supprimer_membre</servlet-name>
+  	<url-pattern>/supprimbr</url-pattern>
+  </servlet-mapping>
+  
+
+
+  <!-- The Usual Welcome File List -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>

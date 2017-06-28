@@ -1,0 +1,44 @@
+		table{
+				border: solid 1px #DDDDDD;
+				width: 100%;
+				margin-top: 14px;
+			}
+			
+			.bd{
+				border:solid 1px #DDDDDD;
+			}
+			.mini{
+				display:inline-block;
+			}
+			td{
+				padding: 6px;
+				border:solid 1px #DDDDDD;
+			}
+			.categ{
+			
+				cursor: pointer;
+				font-weight: bold;
+				font: 18px 'verdana';
+				width: 330px;
+			}
+			.prix{
+				color: blue;
+				font-weight: bold;
+				width: 100px;
+				font: 20px verdana;
+			}
+			.spec{
+				color: #AAA;
+				font: 20px 'verdana';
+			}
+			.time{
+				font: 14px Verdana;
+				text-align: center;
+				width: 120px;
+			}
+			img{
+				width: 14Opx; height: 92px;
+				margin-left: 26px;
+				margin-top: 23px;
+				
+			}
